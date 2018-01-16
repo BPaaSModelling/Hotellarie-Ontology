@@ -1,0 +1,37 @@
+# baseURI: file:/C:/Users/User/Desktop/hotellerieSuisse/GitHub/HotellerieSwiss%20-%20Ontology/HotelData.ttl
+
+@prefix htldata: <http://example.org/hotelData#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+htldata:Hotel
+  rdf:type owl:Class ;
+  rdfs:label "Hotel" ;
+  rdfs:subClassOf owl:Thing ;
+.
+htldata:HotelHasLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "HotelHasLocation" ;
+.
+htldata:HotelHasProductCategory
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "HotelHasProductCategory" ;
+.
+htldata:HotelHasScale
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "HotelHasScale" ;
+.
+htldata:HotelHasSize
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Hotel has a Size" ;
+.
+htldata:HotelHasStructure
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "HotelHasStructure" ;
+.
+htldata:HotelHasType
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "HotelHasType" ;
+.
