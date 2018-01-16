@@ -1,4 +1,6 @@
 # baseURI: http://ikm-group.ch/archiMEO/questiondata
+# imports: http://example.org/hotel
+# imports: http://ikm-group.ch/archiMEO/HotelData
 # imports: http://ikm-group.ch/archiMEO/questionnaire
 # prefix: questiondata
 
@@ -12,6 +14,8 @@
 
 <http://ikm-group.ch/archiMEO/questiondata>
   rdf:type owl:Ontology ;
+  owl:imports <http://example.org/hotel> ;
+  owl:imports <http://ikm-group.ch/archiMEO/HotelData> ;
   owl:imports <http://ikm-group.ch/archiMEO/questionnaire> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
@@ -227,6 +231,7 @@ questiondata:What_s_the_location
   rdf:type questiondata:HotelQuestion ;
   rdf:type questionnaire:Location ;
   rdf:type questionnaire:MultiSelection ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   questionnaire:questionHasAnswers questiondata:Austria ;
   questionnaire:questionHasAnswers questiondata:Belgium ;
   questionnaire:questionHasAnswers questiondata:Canada ;
@@ -256,13 +261,26 @@ questiondata:What_s_the_product_category
   rdf:type questiondata:HotelQuestion ;
   rdf:type questionnaire:Functional ;
   rdf:type questionnaire:MultiSelection ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasProductCategory> ;
   questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
   rdfs:label "What's the product category?" ;
+.
+questiondata:What_s_the_scale
+  rdf:type questiondata:HotelQuestion ;
+  rdf:type questionnaire:MultiSelection ;
+  rdf:type questionnaire:Scale ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasScale> ;
+  questionnaire:questionHasAnswers questiondata:Economy ;
+  questionnaire:questionHasAnswers questiondata:Luxury ;
+  questionnaire:questionHasAnswers questiondata:Midscale ;
+  questionnaire:questionHasAnswers questiondata:Upscale ;
+  rdfs:label "What's the scale?" ;
 .
 questiondata:What_s_the_size
   rdf:type questiondata:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Size ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasSize> ;
   questionnaire:questionHasAnswers questiondata:Big ;
   questionnaire:questionHasAnswers questiondata:Maxi ;
   questionnaire:questionHasAnswers questiondata:Medium ;
@@ -274,6 +292,7 @@ questiondata:What_s_the_structure
   rdf:type questiondata:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Structure ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasStructure> ;
   questionnaire:questionHasAnswers questiondata:Indipendent ;
   questionnaire:questionHasAnswers questiondata:Multi_property ;
   questionnaire:questionHasAnswers questiondata:any ;
@@ -291,20 +310,11 @@ questiondata:any
   rdf:type questionnaire:Answer ;
   rdfs:label "any" ;
 .
-questiondata:what_s_the_scale
-  rdf:type questiondata:HotelQuestion ;
-  rdf:type questionnaire:MultiSelection ;
-  rdf:type questionnaire:Scale ;
-  questionnaire:questionHasAnswers questiondata:Economy ;
-  questionnaire:questionHasAnswers questiondata:Luxury ;
-  questionnaire:questionHasAnswers questiondata:Midscale ;
-  questionnaire:questionHasAnswers questiondata:Upscale ;
-  rdfs:label "What's the scale?" ;
-.
 questiondata:what_s_the_type
   rdf:type questiondata:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Type ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   questionnaire:questionHasAnswers questiondata:All_suites ;
   questionnaire:questionHasAnswers questiondata:Bar ;
   questionnaire:questionHasAnswers questiondata:Boutique_Hotel ;

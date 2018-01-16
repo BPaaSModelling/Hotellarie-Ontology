@@ -1,37 +1,339 @@
-# baseURI: file:/C:/Users/User/Desktop/hotellerieSuisse/GitHub/HotellerieSwiss%20-%20Ontology/HotelData.ttl
+# baseURI: http://ikm-group.ch/archiMEO/HotelData
+# imports: http://example.org/hotel
 
+@prefix hote: <http://example.org/hotel> .
+@prefix htl: <http://example.org/hotel#> .
 @prefix htldata: <http://example.org/hotelData#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-htldata:Hotel
-  rdf:type owl:Class ;
-  rdfs:label "Hotel" ;
-  rdfs:subClassOf owl:Thing ;
-.
 htldata:HotelHasLocation
   rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
   rdfs:label "HotelHasLocation" ;
+  rdfs:range htl:Location ;
 .
 htldata:HotelHasProductCategory
   rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
   rdfs:label "HotelHasProductCategory" ;
+  rdfs:range htl:Product_Categories ;
 .
 htldata:HotelHasScale
   rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
   rdfs:label "HotelHasScale" ;
+  rdfs:range htl:Scaled ;
 .
 htldata:HotelHasSize
   rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
   rdfs:label "Hotel has a Size" ;
+  rdfs:range htl:Size ;
 .
 htldata:HotelHasStructure
   rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
   rdfs:label "HotelHasStructure" ;
+  rdfs:range htl:Structure ;
 .
 htldata:HotelHasType
   rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
   rdfs:label "HotelHasType" ;
+  rdfs:range htl:Type ;
+.
+htldata:Hotel_1
+  rdf:type htl:Hotel ;
+  htldata:HotelHasLocation htl:Africa ;
+  htldata:HotelHasLocation htl:Asia ;
+  htldata:HotelHasLocation htl:Australia ;
+  htldata:HotelHasLocation htl:Austria ;
+  htldata:HotelHasLocation htl:Belgium ;
+  htldata:HotelHasLocation htl:Brazil ;
+  htldata:HotelHasLocation htl:Canada ;
+  htldata:HotelHasLocation htl:Croatia ;
+  htldata:HotelHasLocation htl:Czech_Republic ;
+  htldata:HotelHasLocation htl:Denmark ;
+  htldata:HotelHasLocation htl:Estonia ;
+  htldata:HotelHasLocation htl:Finland ;
+  htldata:HotelHasLocation htl:France ;
+  htldata:HotelHasLocation htl:Georgia ;
+  htldata:HotelHasLocation htl:Germany ;
+  htldata:HotelHasLocation htl:Greece ;
+  htldata:HotelHasLocation htl:Holland ;
+  htldata:HotelHasLocation htl:Indonesia ;
+  htldata:HotelHasLocation htl:Ireland ;
+  htldata:HotelHasLocation htl:Island ;
+  htldata:HotelHasLocation htl:Italy ;
+  htldata:HotelHasLocation htl:Latin_America ;
+  htldata:HotelHasLocation htl:Lithuania ;
+  htldata:HotelHasLocation htl:Luxembourg ;
+  htldata:HotelHasLocation htl:Mexico ;
+  htldata:HotelHasLocation htl:Netherlands ;
+  htldata:HotelHasLocation htl:New_Mexico ;
+  htldata:HotelHasLocation htl:New_Zealand ;
+  htldata:HotelHasLocation htl:Norway ;
+  htldata:HotelHasLocation htl:Poland ;
+  htldata:HotelHasLocation htl:Portugal ;
+  htldata:HotelHasLocation htl:Russia ;
+  htldata:HotelHasLocation htl:Scandinavia ;
+  htldata:HotelHasLocation htl:South_Africa ;
+  htldata:HotelHasLocation htl:Spain ;
+  htldata:HotelHasLocation htl:Sweden ;
+  htldata:HotelHasLocation htl:Switzerland ;
+  htldata:HotelHasLocation htl:Turkey ;
+  htldata:HotelHasLocation htl:UK ;
+  htldata:HotelHasLocation htl:USA ;
+  htldata:HotelHasLocation htl:Ukraine ;
+  htldata:HotelHasScale htl:Economy ;
+  htldata:HotelHasScale htl:Luxury ;
+  htldata:HotelHasScale htl:Midscale ;
+  htldata:HotelHasScale htl:Upscale ;
+  htldata:HotelHasSize htl:Big ;
+  htldata:HotelHasSize htl:Maxi ;
+  htldata:HotelHasSize htl:Medium ;
+  htldata:HotelHasSize htl:Small ;
+  htldata:HotelHasStructure htl:Independent ;
+  htldata:HotelHasStructure htl:Multi-propriety ;
+  htldata:HotelHasType htl:All_suites ;
+  htldata:HotelHasType htl:Bar ;
+  htldata:HotelHasType htl:Boutique_Hotel ;
+  htldata:HotelHasType htl:Business_Hotel ;
+  htldata:HotelHasType htl:Casino ;
+  htldata:HotelHasType htl:Coffe_Shop ;
+  htldata:HotelHasType htl:Conference ;
+  htldata:HotelHasType htl:Convention ;
+  htldata:HotelHasType htl:Fine_Dining ;
+  htldata:HotelHasType htl:Full_Service_Restaurant ;
+  htldata:HotelHasType htl:Hostels ;
+  htldata:HotelHasType htl:Members_Club ;
+  htldata:HotelHasType htl:Non-classified ;
+  htldata:HotelHasType htl:Quick_Service_Restaurant ;
+  htldata:HotelHasType htl:Resort ;
+  htldata:HotelHasType htl:Serviced_Apartments ;
+  htldata:HotelHasType htl:Spa ;
+  rdfs:label "Hotel 1" ;
+.
+htldata:Hotel_1_1
+  rdf:type htl:Hotel ;
+  htldata:HotelHasLocation htl:Africa ;
+  htldata:HotelHasLocation htl:Asia ;
+  htldata:HotelHasLocation htl:Australia ;
+  htldata:HotelHasLocation htl:Austria ;
+  htldata:HotelHasLocation htl:Belgium ;
+  htldata:HotelHasLocation htl:Brazil ;
+  htldata:HotelHasLocation htl:Canada ;
+  htldata:HotelHasLocation htl:Croatia ;
+  htldata:HotelHasLocation htl:Czech_Republic ;
+  htldata:HotelHasLocation htl:Denmark ;
+  htldata:HotelHasLocation htl:Estonia ;
+  htldata:HotelHasLocation htl:Finland ;
+  htldata:HotelHasLocation htl:France ;
+  htldata:HotelHasLocation htl:Georgia ;
+  htldata:HotelHasLocation htl:Germany ;
+  htldata:HotelHasLocation htl:Greece ;
+  htldata:HotelHasLocation htl:Holland ;
+  htldata:HotelHasLocation htl:Indonesia ;
+  htldata:HotelHasLocation htl:Ireland ;
+  htldata:HotelHasLocation htl:Island ;
+  htldata:HotelHasLocation htl:Italy ;
+  htldata:HotelHasLocation htl:Latin_America ;
+  htldata:HotelHasLocation htl:Lithuania ;
+  htldata:HotelHasLocation htl:Luxembourg ;
+  htldata:HotelHasLocation htl:Mexico ;
+  htldata:HotelHasLocation htl:Netherlands ;
+  htldata:HotelHasLocation htl:New_Mexico ;
+  htldata:HotelHasLocation htl:New_Zealand ;
+  htldata:HotelHasLocation htl:Norway ;
+  htldata:HotelHasLocation htl:Poland ;
+  htldata:HotelHasLocation htl:Portugal ;
+  htldata:HotelHasLocation htl:Russia ;
+  htldata:HotelHasLocation htl:Scandinavia ;
+  htldata:HotelHasLocation htl:South_Africa ;
+  htldata:HotelHasLocation htl:Spain ;
+  htldata:HotelHasLocation htl:Sweden ;
+  htldata:HotelHasLocation htl:Switzerland ;
+  htldata:HotelHasLocation htl:Turkey ;
+  htldata:HotelHasLocation htl:UK ;
+  htldata:HotelHasLocation htl:USA ;
+  htldata:HotelHasLocation htl:Ukraine ;
+  htldata:HotelHasScale htl:Economy ;
+  htldata:HotelHasScale htl:Luxury ;
+  htldata:HotelHasScale htl:Midscale ;
+  htldata:HotelHasScale htl:Upscale ;
+  htldata:HotelHasSize htl:Big ;
+  htldata:HotelHasSize htl:Maxi ;
+  htldata:HotelHasSize htl:Medium ;
+  htldata:HotelHasSize htl:Small ;
+  htldata:HotelHasStructure htl:Independent ;
+  htldata:HotelHasStructure htl:Multi-propriety ;
+  htldata:HotelHasType htl:All_suites ;
+  htldata:HotelHasType htl:Bar ;
+  htldata:HotelHasType htl:Boutique_Hotel ;
+  htldata:HotelHasType htl:Business_Hotel ;
+  htldata:HotelHasType htl:Casino ;
+  htldata:HotelHasType htl:Coffe_Shop ;
+  htldata:HotelHasType htl:Conference ;
+  htldata:HotelHasType htl:Convention ;
+  htldata:HotelHasType htl:Fine_Dining ;
+  htldata:HotelHasType htl:Full_Service_Restaurant ;
+  htldata:HotelHasType htl:Hostels ;
+  htldata:HotelHasType htl:Members_Club ;
+  htldata:HotelHasType htl:Non-classified ;
+  htldata:HotelHasType htl:Quick_Service_Restaurant ;
+  htldata:HotelHasType htl:Resort ;
+  htldata:HotelHasType htl:Serviced_Apartments ;
+  htldata:HotelHasType htl:Spa ;
+  rdfs:label "Hotel 2" ;
+.
+htldata:Hotel_1_1_1
+  rdf:type htl:Hotel ;
+  htldata:HotelHasLocation htl:Africa ;
+  htldata:HotelHasLocation htl:Asia ;
+  htldata:HotelHasLocation htl:Australia ;
+  htldata:HotelHasLocation htl:Austria ;
+  htldata:HotelHasLocation htl:Belgium ;
+  htldata:HotelHasLocation htl:Brazil ;
+  htldata:HotelHasLocation htl:Canada ;
+  htldata:HotelHasLocation htl:Croatia ;
+  htldata:HotelHasLocation htl:Czech_Republic ;
+  htldata:HotelHasLocation htl:Denmark ;
+  htldata:HotelHasLocation htl:Estonia ;
+  htldata:HotelHasLocation htl:Finland ;
+  htldata:HotelHasLocation htl:France ;
+  htldata:HotelHasLocation htl:Georgia ;
+  htldata:HotelHasLocation htl:Germany ;
+  htldata:HotelHasLocation htl:Greece ;
+  htldata:HotelHasLocation htl:Holland ;
+  htldata:HotelHasLocation htl:Indonesia ;
+  htldata:HotelHasLocation htl:Ireland ;
+  htldata:HotelHasLocation htl:Island ;
+  htldata:HotelHasLocation htl:Italy ;
+  htldata:HotelHasLocation htl:Latin_America ;
+  htldata:HotelHasLocation htl:Lithuania ;
+  htldata:HotelHasLocation htl:Luxembourg ;
+  htldata:HotelHasLocation htl:Mexico ;
+  htldata:HotelHasLocation htl:Netherlands ;
+  htldata:HotelHasLocation htl:New_Mexico ;
+  htldata:HotelHasLocation htl:New_Zealand ;
+  htldata:HotelHasLocation htl:Norway ;
+  htldata:HotelHasLocation htl:Poland ;
+  htldata:HotelHasLocation htl:Portugal ;
+  htldata:HotelHasLocation htl:Russia ;
+  htldata:HotelHasLocation htl:Scandinavia ;
+  htldata:HotelHasLocation htl:South_Africa ;
+  htldata:HotelHasLocation htl:Spain ;
+  htldata:HotelHasLocation htl:Sweden ;
+  htldata:HotelHasLocation htl:Switzerland ;
+  htldata:HotelHasLocation htl:Turkey ;
+  htldata:HotelHasLocation htl:UK ;
+  htldata:HotelHasLocation htl:USA ;
+  htldata:HotelHasLocation htl:Ukraine ;
+  htldata:HotelHasScale htl:Economy ;
+  htldata:HotelHasScale htl:Luxury ;
+  htldata:HotelHasScale htl:Midscale ;
+  htldata:HotelHasScale htl:Upscale ;
+  htldata:HotelHasSize htl:Big ;
+  htldata:HotelHasSize htl:Maxi ;
+  htldata:HotelHasSize htl:Medium ;
+  htldata:HotelHasSize htl:Small ;
+  htldata:HotelHasStructure htl:Independent ;
+  htldata:HotelHasStructure htl:Multi-propriety ;
+  htldata:HotelHasType htl:All_suites ;
+  htldata:HotelHasType htl:Bar ;
+  htldata:HotelHasType htl:Boutique_Hotel ;
+  htldata:HotelHasType htl:Business_Hotel ;
+  htldata:HotelHasType htl:Casino ;
+  htldata:HotelHasType htl:Coffe_Shop ;
+  htldata:HotelHasType htl:Conference ;
+  htldata:HotelHasType htl:Convention ;
+  htldata:HotelHasType htl:Fine_Dining ;
+  htldata:HotelHasType htl:Full_Service_Restaurant ;
+  htldata:HotelHasType htl:Hostels ;
+  htldata:HotelHasType htl:Members_Club ;
+  htldata:HotelHasType htl:Non-classified ;
+  htldata:HotelHasType htl:Quick_Service_Restaurant ;
+  htldata:HotelHasType htl:Resort ;
+  htldata:HotelHasType htl:Serviced_Apartments ;
+  htldata:HotelHasType htl:Spa ;
+  rdfs:label "Hotel 3" ;
+.
+htldata:Hotel_1_1_1_1
+  rdf:type htl:Hotel ;
+  htldata:HotelHasLocation htl:Africa ;
+  htldata:HotelHasLocation htl:Asia ;
+  htldata:HotelHasLocation htl:Australia ;
+  htldata:HotelHasLocation htl:Austria ;
+  htldata:HotelHasLocation htl:Belgium ;
+  htldata:HotelHasLocation htl:Brazil ;
+  htldata:HotelHasLocation htl:Canada ;
+  htldata:HotelHasLocation htl:Croatia ;
+  htldata:HotelHasLocation htl:Czech_Republic ;
+  htldata:HotelHasLocation htl:Denmark ;
+  htldata:HotelHasLocation htl:Estonia ;
+  htldata:HotelHasLocation htl:Finland ;
+  htldata:HotelHasLocation htl:France ;
+  htldata:HotelHasLocation htl:Georgia ;
+  htldata:HotelHasLocation htl:Germany ;
+  htldata:HotelHasLocation htl:Greece ;
+  htldata:HotelHasLocation htl:Holland ;
+  htldata:HotelHasLocation htl:Indonesia ;
+  htldata:HotelHasLocation htl:Ireland ;
+  htldata:HotelHasLocation htl:Island ;
+  htldata:HotelHasLocation htl:Italy ;
+  htldata:HotelHasLocation htl:Latin_America ;
+  htldata:HotelHasLocation htl:Lithuania ;
+  htldata:HotelHasLocation htl:Luxembourg ;
+  htldata:HotelHasLocation htl:Mexico ;
+  htldata:HotelHasLocation htl:Netherlands ;
+  htldata:HotelHasLocation htl:New_Mexico ;
+  htldata:HotelHasLocation htl:New_Zealand ;
+  htldata:HotelHasLocation htl:Norway ;
+  htldata:HotelHasLocation htl:Poland ;
+  htldata:HotelHasLocation htl:Portugal ;
+  htldata:HotelHasLocation htl:Russia ;
+  htldata:HotelHasLocation htl:Scandinavia ;
+  htldata:HotelHasLocation htl:South_Africa ;
+  htldata:HotelHasLocation htl:Spain ;
+  htldata:HotelHasLocation htl:Sweden ;
+  htldata:HotelHasLocation htl:Switzerland ;
+  htldata:HotelHasLocation htl:Turkey ;
+  htldata:HotelHasLocation htl:UK ;
+  htldata:HotelHasLocation htl:USA ;
+  htldata:HotelHasLocation htl:Ukraine ;
+  htldata:HotelHasScale htl:Economy ;
+  htldata:HotelHasScale htl:Luxury ;
+  htldata:HotelHasScale htl:Midscale ;
+  htldata:HotelHasScale htl:Upscale ;
+  htldata:HotelHasSize htl:Big ;
+  htldata:HotelHasSize htl:Maxi ;
+  htldata:HotelHasSize htl:Medium ;
+  htldata:HotelHasSize htl:Small ;
+  htldata:HotelHasStructure htl:Independent ;
+  htldata:HotelHasStructure htl:Multi-propriety ;
+  htldata:HotelHasType htl:All_suites ;
+  htldata:HotelHasType htl:Bar ;
+  htldata:HotelHasType htl:Boutique_Hotel ;
+  htldata:HotelHasType htl:Business_Hotel ;
+  htldata:HotelHasType htl:Casino ;
+  htldata:HotelHasType htl:Coffe_Shop ;
+  htldata:HotelHasType htl:Conference ;
+  htldata:HotelHasType htl:Convention ;
+  htldata:HotelHasType htl:Fine_Dining ;
+  htldata:HotelHasType htl:Full_Service_Restaurant ;
+  htldata:HotelHasType htl:Hostels ;
+  htldata:HotelHasType htl:Members_Club ;
+  htldata:HotelHasType htl:Non-classified ;
+  htldata:HotelHasType htl:Quick_Service_Restaurant ;
+  htldata:HotelHasType htl:Resort ;
+  htldata:HotelHasType htl:Serviced_Apartments ;
+  htldata:HotelHasType htl:Spa ;
+  rdfs:label "Hotel 4" ;
+.
+<http://ikm-group.ch/archiMEO/HotelData>
+  rdf:type owl:Ontology ;
+  owl:imports <http://example.org/hotel> ;
 .

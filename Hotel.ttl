@@ -164,6 +164,11 @@ htl:Hostels
   rdf:type htl:Type ;
   rdfs:label "Hostels" ;
 .
+htl:Hotel
+  rdf:type owl:Class ;
+  rdfs:label "Hotel" ;
+  rdfs:subClassOf owl:Thing ;
+.
 htl:Independent
   rdf:type htl:Structure ;
   rdfs:label "Independent" ;
