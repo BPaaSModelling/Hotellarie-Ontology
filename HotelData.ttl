@@ -1,49 +1,18 @@
 # baseURI: http://ikm-group.ch/archiMEO/HotelData
-# imports: http://example.org/hotel
+# imports: http://ikm-group.ch/archiMEO/Hotel
+# prefix: htlData
 
-@prefix hote: <http://example.org/hotel> .
-@prefix htl: <http://example.org/hotel#> .
-@prefix htldata: <http://example.org/hotelData#> .
+@prefix htl: <http://ikm-group.ch/archiMEO/Hotel#> .
+@prefix htldata: <http://ikm-group.ch/archiMEO/HotelData#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-htldata:HotelHasLocation
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasLocation" ;
-  rdfs:range htl:Location ;
-.
-htldata:HotelHasProductCategory
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasProductCategory" ;
-  rdfs:range htl:Product_Categories ;
-.
-htldata:HotelHasScale
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasScale" ;
-  rdfs:range htl:Scaled ;
-.
-htldata:HotelHasSize
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "Hotel has a Size" ;
-  rdfs:range htl:Size ;
-.
-htldata:HotelHasStructure
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasStructure" ;
-  rdfs:range htl:Structure ;
-.
-htldata:HotelHasType
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasType" ;
-  rdfs:range htl:Type ;
+<http://ikm-group.ch/archimeo/htlData>
+  rdf:type owl:Ontology ;
+  owl:imports <http://ikm-group.ch/archimeo/htl> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
 .
 htldata:Hotel_1
   rdf:type htl:Hotel ;
@@ -332,8 +301,4 @@ htldata:Hotel_1_1_1_1
   htldata:HotelHasType htl:Serviced_Apartments ;
   htldata:HotelHasType htl:Spa ;
   rdfs:label "Hotel 4" ;
-.
-<http://ikm-group.ch/archiMEO/HotelData>
-  rdf:type owl:Ontology ;
-  owl:imports <http://example.org/hotel> ;
 .

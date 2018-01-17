@@ -1,6 +1,6 @@
 # baseURI: http://ikm-group.ch/archiMEO/questionnaire
-# imports: http://ikm-group.ch/archiMEO/bdata
-# imports: http://ikm-group.ch/archimeo/bpaas
+# imports: http://ikm-group.ch/archiMEO/htlData
+# imports: http://ikm-group.ch/archimeo/htl
 # prefix: questionnaire
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -9,14 +9,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ikm-group.ch/archiMEO/questiondata#HotelQuestion>
-  rdf:type owl:Class ;
-  rdfs:subClassOf questionnaire:Model ;
-.
 <http://ikm-group.ch/archiMEO/questionnaire>
   rdf:type owl:Ontology ;
-  owl:imports <http://ikm-group.ch/archiMEO/bdata> ;
-  owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
+  owl:imports <http://ikm-group.ch/archiMEO/htlData> ;
+  owl:imports <http://ikm-group.ch/archimeo/htl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 questionnaire:Answer
@@ -40,6 +36,14 @@ questionnaire:AttributeHasQuestionRelation
   rdfs:domain <http://ikm-group.ch/archiMEO/eo#EnterpriseObject> ;
   rdfs:label "AttributeHasQuestionRelation" ;
   rdfs:range questionnaire:Question ;
+.
+questionnaire:HotelDomain
+  rdf:type owl:Class ;
+  rdfs:subClassOf questionnaire:Model ;
+.
+questionnaire:HotelElement
+  rdf:type owl:Class ;
+  rdfs:subClassOf questionnaire:Model ;
 .
 questionnaire:Equality
   rdf:type owl:Class ;
@@ -123,6 +127,11 @@ questionnaire:SingleSelection
   rdf:type owl:Class ;
   rdfs:label "SingleSelection" ;
   rdfs:subClassOf questionnaire:AnswerType ;
+.
+questionnaire:HotelElementHasCloudServiceDomain
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain questionnaire:HotelElement ;
+  rdfs:range questionnaire:HotelDomain ;
 .
 questionnaire:Size
   rdf:type owl:Class ;
