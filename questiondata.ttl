@@ -5,6 +5,7 @@
 # prefix: questiondata
 
 @prefix bpaas: <http://ikm-group.ch/archimeo/bpaas#> .
+@prefix hote: <http://example.org/hotel> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix questiondata: <http://ikm-group.ch/archiMEO/questiondata#> .
 @prefix questionnaire: <http://ikm-group.ch/archiMEO/questionnaire#> .
@@ -21,62 +22,77 @@
 .
 questiondata:All_suites
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "All suites" ;
 .
 questiondata:Austria
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Austria" ;
 .
 questiondata:Bar
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Bar" ;
 .
 questiondata:Belgium
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Belgium" ;
 .
 questiondata:Big
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasSize> ;
   rdfs:label "Big (81-200 rooms/seatings)" ;
 .
 questiondata:Boutique_Hotel
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Boutique Hotel" ;
 .
 questiondata:Business_Hotel
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Business Hotel" ;
 .
 questiondata:Canada
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Canada" ;
 .
 questiondata:Casino
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Casino" ;
 .
 questiondata:Coffee_Shop
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Coffee Shop" ;
 .
 questiondata:Conference
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Conference" ;
 .
 questiondata:Convention
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Convention" ;
 .
 questiondata:Croatia
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Croatia" ;
 .
 questiondata:Czech_Republic
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Czech Republic" ;
 .
 questiondata:Denmark
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Denmark" ;
 .
 questiondata:Do_not_care
@@ -85,78 +101,102 @@ questiondata:Do_not_care
 .
 questiondata:Economy
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasScale> ;
   rdfs:label "Economy" ;
 .
 questiondata:Fine_Dining
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Fine Dining" ;
 .
 questiondata:Finland
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Finland" ;
 .
 questiondata:France
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "France" ;
 .
 questiondata:Full_Service_Restaurant
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Full Service Restaurant" ;
 .
 questiondata:Germany
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Germany" ;
 .
 questiondata:Greece
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Greece" ;
+.
+questiondata:Guest_Facing
+  rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasProductCategory> ;
+  rdfs:label "Guest Facing" ;
 .
 questiondata:Hostels
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Hostels" ;
 .
 questiondata:Hotel
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Hotel" ;
 .
 questiondata:Indipendent
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasStructure> ;
   rdfs:label "Indipendent" ;
 .
 questiondata:Italy
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Italy" ;
 .
 questiondata:Luxembourg
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Luxembourg" ;
 .
 questiondata:Luxury
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Luxury" ;
 .
 questiondata:Maxi
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasSize> ;
   rdfs:label "Maxi (201+ rooms/seatings)" ;
 .
 questiondata:Medium
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasScale> ;
   rdfs:label "Medium (31-80Rooms/seatings)" ;
 .
 questiondata:Members_Club
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Members Club" ;
 .
 questiondata:Midscale
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasScale> ;
   rdfs:label "Midscale" ;
 .
 questiondata:Multi_property
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Multi-property" ;
 .
 questiondata:Netherlands
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Netherlands" ;
 .
 questiondata:No
@@ -165,6 +205,7 @@ questiondata:No
 .
 questiondata:Non-classified
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Non-classified" ;
 .
 questiondata:None
@@ -173,58 +214,77 @@ questiondata:None
 .
 questiondata:Norway
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Norway" ;
+.
+questiondata:Operations
+  rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasProductCategory> ;
+  rdfs:label "Operations" ;
 .
 questiondata:Poland
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Poland" ;
 .
 questiondata:Portugal
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Portugal" ;
 .
 questiondata:Quick_Service_Restaurant
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Quick Service Restaurant" ;
 .
 questiondata:Resort
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Resort" ;
 .
 questiondata:Serviced_Apartments
   rdf:type questionnaire:Answer ;
+  questionnaire:AnswerHasQuestionDependency questiondata:what_s_the_type ;
   rdfs:label "Serviced Apartments" ;
 .
 questiondata:Small
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasSize> ;
   rdfs:label "Small (30 rooms)" ;
 .
 questiondata:Spa
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "Spa" ;
 .
 questiondata:Spain
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Spain" ;
 .
 questiondata:Sweden
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Sweden" ;
 .
 questiondata:Switzerland
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "Switzerland" ;
 .
 questiondata:UK
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "UK" ;
 .
 questiondata:USA
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
   rdfs:label "USA" ;
 .
 questiondata:Upscale
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasScale> ;
   rdfs:label "Upscale" ;
 .
 questiondata:What_s_the_location
@@ -262,6 +322,9 @@ questiondata:What_s_the_product_category
   rdf:type questionnaire:Functional ;
   rdf:type questionnaire:MultiSelection ;
   questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasProductCategory> ;
+  questionnaire:questionHasAnswers questiondata:Guest_Facing ;
+  questionnaire:questionHasAnswers questiondata:Operations ;
+  questionnaire:questionHasAnswers questiondata:online_distribution_and_marketing ;
   questionnaire:searchSelectionOnClassesInsteadOfInstances "true"^^xsd:boolean ;
   rdfs:label "What's the product category?" ;
 .
@@ -308,7 +371,16 @@ questiondata:Yes
 .
 questiondata:any
   rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasLocation> ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasSize> ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasStructure> ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasType> ;
   rdfs:label "any" ;
+.
+questiondata:online_distribution_and_marketing
+  rdf:type questionnaire:Answer ;
+  questionnaire:questionHasAnnotationRelation <http://example.org/hotelData#HotelHasProductCategory> ;
+  rdfs:label "online distribution & marketing" ;
 .
 questiondata:what_s_the_type
   rdf:type questiondata:HotelQuestion ;
