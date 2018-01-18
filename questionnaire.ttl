@@ -1,6 +1,6 @@
 # baseURI: http://ikm-group.ch/archiMEO/questionnaire
-# imports: http://ikm-group.ch/archiMEO/htlData
-# imports: http://ikm-group.ch/archimeo/htl
+# imports: http://ikm-group.ch/archiMEO/htldata
+# imports: http://ikm-group.ch/archiMEO/htl
 # prefix: questionnaire
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -11,8 +11,8 @@
 
 <http://ikm-group.ch/archiMEO/questionnaire>
   rdf:type owl:Ontology ;
-  owl:imports <http://ikm-group.ch/archiMEO/htlData> ;
-  owl:imports <http://ikm-group.ch/archimeo/htl> ;
+  owl:imports <http://ikm-group.ch/archiMEO/htldata> ;
+  owl:imports <http://ikm-group.ch/archiMEO/htl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 questionnaire:Answer
@@ -82,7 +82,7 @@ questionnaire:LessThan
 .
 questionnaire:Location
   rdf:type owl:Class ;
-  rdfs:label "Data Security" ;
+  rdfs:label "Location" ;
   rdfs:subClassOf questionnaire:Question ;
 .
 questionnaire:LogicalOperators
@@ -115,7 +115,7 @@ questionnaire:Questionnaire
 .
 questionnaire:Scale
   rdf:type owl:Class ;
-  rdfs:label "Service Support" ;
+  rdfs:label "Scale" ;
   rdfs:subClassOf questionnaire:Question ;
 .
 questionnaire:SearchSelection
@@ -128,24 +128,24 @@ questionnaire:SingleSelection
   rdfs:label "SingleSelection" ;
   rdfs:subClassOf questionnaire:AnswerType ;
 .
-questionnaire:HotelElementHasCloudServiceDomain
+questionnaire:HotelElementHasHotelDomain
   rdf:type owl:ObjectProperty ;
   rdfs:domain questionnaire:HotelElement ;
   rdfs:range questionnaire:HotelDomain ;
 .
 questionnaire:Size
   rdf:type owl:Class ;
-  rdfs:label "Payment" ;
+  rdfs:label "Size" ;
   rdfs:subClassOf questionnaire:Question ;
 .
 questionnaire:Structure
   rdf:type owl:Class ;
-  rdfs:label "Performance" ;
+  rdfs:label "Structure" ;
   rdfs:subClassOf questionnaire:Question ;
 .
 questionnaire:Type
   rdf:type owl:Class ;
-  rdfs:label "NotSortedYet" ;
+  rdfs:label "Type" ;
   rdfs:subClassOf questionnaire:Question ;
 .
 questionnaire:ValueInsert
@@ -206,4 +206,29 @@ questionnaire:valueInsertAnswerTypeHasDatatype
   rdfs:domain questionnaire:ValueInsert ;
   rdfs:label "valueInsertAnswerTypeHasDatatype" ;
   rdfs:range rdfs:Datatype ;
+.
+questionnaire:Location
+  rdf:type owl:Class ;
+  rdfs:label "Location" ;
+  rdfs:subClassOf questionnaire:Question ;
+.
+questionnaire:Type
+  rdf:type owl:Class ;
+  rdfs:label "Type" ;
+  rdfs:subClassOf questionnaire:Question ;
+.
+questionnaire:Size
+  rdf:type owl:Class ;
+  rdfs:label "Size" ;
+  rdfs:subClassOf questionnaire:Question ;
+.
+questionnaire:Scale
+  rdf:type owl:Class ;
+  rdfs:label "Scale" ;
+  rdfs:subClassOf questionnaire:Question ;
+.
+questionnaire:Structure
+  rdf:type owl:Class ;
+  rdfs:label "Structure" ;
+  rdfs:subClassOf questionnaire:Question ;
 .

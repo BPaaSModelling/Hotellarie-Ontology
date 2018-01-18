@@ -1,0 +1,114 @@
+# baseURI: http://ikm-group.ch/archiMEO/fbpdo
+# prefix: fbpdo
+
+@prefix fbpdo: <http://ikm-group.ch/archiMEO/fbpdo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ikm-group.ch/archiMEO/fbpdo>
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+fbpdo:Booking_Engine
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Booking Engine" ;
+.
+fbpdo:CRM_and_E-mailing
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "CRM and E-mailing" ;
+.
+fbpdo:Channel_Manager
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Channel Manager" ;
+.
+fbpdo:Direct_Booking_Booster
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Direct Booking Booster" ;
+.
+fbpdo:E-reputation_and_Social_Media_Scanner
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "E-reputation and Social Media Scanner" ;
+.
+fbpdo:FunctionalBusinessProcessDescription
+  rdf:type owl:Class ;
+  rdfs:label "Functional Business Process Description" ;
+  rdfs:subClassOf owl:Thing ;
+.
+fbpdo:Guest_Facing
+  rdf:type owl:Class ;
+  rdfs:label "hotel guest Facing" ;
+  rdfs:subClassOf fbpdo:Product_Category ;
+.
+fbpdo:Guest_Feedback_and_Survey
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Guest Feedback and Survey" ;
+.
+fbpdo:Istant_Guest_Messaging
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Istant Guest Messaging" ;
+.
+fbpdo:Meta_Search_Optimiser
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Meta Search Optimiser" ;
+.
+fbpdo:Online_distribution_and_Marketing
+  rdf:type owl:Class ;
+  rdfs:label "Online distribution and Marketing" ;
+  rdfs:subClassOf fbpdo:Product_Category ;
+.
+fbpdo:Operations
+  rdf:type owl:Class ;
+  rdfs:label "Operations" ;
+  rdfs:subClassOf fbpdo:Product_Category ;
+.
+fbpdo:Point_of_Sale
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Point of Sale(POS)" ;
+.
+fbpdo:Pre-stay_Upsell
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Pre-stay Upsell" ;
+.
+fbpdo:Product_Category
+  rdf:type owl:Class ;
+  rdfs:label "Product Category" ;
+  rdfs:subClassOf fbpdo:FunctionalBusinessProcessDescription ;
+.
+fbpdo:Property_Management_System
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Property Management System" ;
+.
+fbpdo:Revenue_Management_System
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Revenue Management System" ;
+.
+fbpdo:Staff_Communication
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Staff Communication" ;
+.
+fbpdo:Staff_Scheduling
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Staff Scheduling" ;
+.
+fbpdo:Task_Management
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Task Management" ;
+.
+fbpdo:Web_App
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Web App" ;
+.
+fbpdo:Website_Builder
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Website Builder" ;
+.
+fbpdo:Website_Chatbot
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "Website Chatbot" ;
+.
+fbpdo:meeting_room_and_Event_Space_Booking_Engine
+  rdf:type fbpdo:Product_Categories ;
+  rdfs:label "meeting room and Event Space Booking Engine" ;
+.

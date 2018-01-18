@@ -1,11 +1,8 @@
 # baseURI: http://ikm-group.ch/archiMEO/questiondata
-# imports: http://ikm-group.ch/archiMEO/htl
-# imports: http://ikm-group.ch/archiMEO/htldata
 # imports: http://ikm-group.ch/archiMEO/questionnaire
 # prefix: questiondata
 
 @prefix htl: <http://ikm-group.ch/archiMEO/htl#> .
-@prefix htldata: <http://ikm-group.ch/archiMEO/htldata#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix questiondata: <http://ikm-group.ch/archiMEO/questiondata#> .
 @prefix questionnaire: <http://ikm-group.ch/archiMEO/questionnaire#> .
@@ -63,7 +60,7 @@ questiondata:Coffee_Shop
   rdfs:label "Coffee Shop" ;
 .
 questiondata:Conference
-  rdf:type questionnaire:Answer ; 
+  rdf:type questionnaire:Answer ;
   rdfs:label "Conference" ;
 .
 questiondata:Convention
@@ -239,76 +236,118 @@ questiondata:Upscale
   rdfs:label "Upscale" ;
 .
 questiondata:What_s_the_location
-  rdf:type questionnaire:HotelQuestion ;
+  rdf:type questionnaire:Location ;
   rdf:type questionnaire:MultiSelection ;
-  questionnaire:questionHasAnnotationRelation htldata:HotelHasLocation ;
-  questionnaire:questionHasAnswers htl:Austria ;
-  questionnaire:questionHasAnswers htl:Belgium ;
-  questionnaire:questionHasAnswers htl:Canada ;
-  questionnaire:questionHasAnswers htl:Croatia ;
-  questionnaire:questionHasAnswers htl:Czech_Republic ;
-  questionnaire:questionHasAnswers htl:Denmark ;
-  questionnaire:questionHasAnswers htl:Finland ;
-  questionnaire:questionHasAnswers htl:France ;
-  questionnaire:questionHasAnswers htl:Germany ;
-  questionnaire:questionHasAnswers htl:Greece ;
-  questionnaire:questionHasAnswers htl:Italy ;
-  questionnaire:questionHasAnswers htl:Luxembourg ;
-  questionnaire:questionHasAnswers htl:Luxury ;
-  questionnaire:questionHasAnswers htl:Netherlands ;
-  questionnaire:questionHasAnswers htl:Norway ;
-  questionnaire:questionHasAnswers htl:Poland ;
-  questionnaire:questionHasAnswers htl:Portugal ;
-  questionnaire:questionHasAnswers htl:Spain ;
-  questionnaire:questionHasAnswers htl:Sweden ;
-  questionnaire:questionHasAnswers htl:Switzerland ;
-  questionnaire:questionHasAnswers htl:UK ;
-  questionnaire:questionHasAnswers htl:USA ;
-  questionnaire:questionHasAnswers htl:any ;
+  rdf:type questionnaire:Question ;
+  questionnaire:questionHasAnnotationRelation <http://ikm-group.ch/archimeo/htl#HotelHasLocation> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Africa> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Asia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Australia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Austria> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Belgium> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Brazil> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Canada> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Croatia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Czech_Republic> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Denmark> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Estonia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Finland> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#France> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Georgia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Germany> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Greece> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Holland> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Indonesia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Ireland> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Island> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Italy> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Latin_America> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Lithuania> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Luxembourg> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Mexico> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Netherlands> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#New_Mexico> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#New_Zealand> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Norway> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Poland> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Portugal> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Russia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Scandinavia> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#South_Africa> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Spain> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Sweden> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Switzerland> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Turkey> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#UK> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#USA> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Ukraine> ;
   rdfs:label "What's the location?" ;
 .
 questiondata:What_s_the_product_category
-  rdf:type questionnaire:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
-  questionnaire:hotelElementHasHotelDomain questiondata:Product_Category ;
-  questionnaire:questionHasAnnotationRelation htldata:HotelHasProductCategory ;
-  questionnaire:questionHasAnswers htl:Guest_Facing ;
-  questionnaire:questionHasAnswers htl:Operations ;
-  questionnaire:questionHasAnswers htl:any ;
-  questionnaire:questionHasAnswers htl:online_distribution_and_marketing ;
+  rdf:type questionnaire:Question ;
+  rdf:type questionnaire:Scale ;
+  questionnaire:hotelElementHasHotelDomain questiondata:Functional ;
+  questionnaire:questionHasAnnotationRelation <http://ikm-group.ch/archimeo/htl#HotelHasProductCategory> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Guest_Facing> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Operations> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#online_distribution_and_marketing> ;
   rdfs:label "What's the product category?" ;
 .
 questiondata:What_s_the_scale
-  rdf:type questionnaire:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
+  rdf:type questionnaire:Question ;
   rdf:type questionnaire:Scale ;
-  questionnaire:questionHasAnnotationRelation htldata:HotelHasScale ;
-  questionnaire:questionHasAnswers htl:Economy ;
-  questionnaire:questionHasAnswers htl:Luxury ;
-  questionnaire:questionHasAnswers htl:Midscale ;
-  questionnaire:questionHasAnswers htl:Upscale ;
+  questionnaire:questionHasAnnotationRelation htl:HotelHasScale ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Economy> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Luxury> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Midscale> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Upscale> ;
   rdfs:label "What's the scale?" ;
 .
 questiondata:What_s_the_size
   rdf:type questionnaire:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
-  questionnaire:questionHasAnnotationRelation htldata:HotelHasSize ;
-  questionnaire:questionHasAnswers htl:Big ;
-  questionnaire:questionHasAnswers htl:Maxi ;
-  questionnaire:questionHasAnswers htl:Medium ;
-  questionnaire:questionHasAnswers htl:Small ;
-  questionnaire:questionHasAnswers htl:any ;
+  rdf:type questionnaire:Size ;
+  questionnaire:questionHasAnnotationRelation htl:HotelHasSize ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Big> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Maxi> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Medium> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Small> ;
   rdfs:label "What's the size?" ;
 .
 questiondata:What_s_the_structure
-  rdf:type questionnaire:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
+  rdf:type questionnaire:Question ;
   rdf:type questionnaire:Structure ;
-  questionnaire:questionHasAnnotationRelation htldata:HotelHasStructure ;
-  questionnaire:questionHasAnswers htl:Indipendent ;
-  questionnaire:questionHasAnswers htl:Multi_property ;
-  questionnaire:questionHasAnswers htl:any ;
+  questionnaire:questionHasAnnotationRelation htl:HotelHasStructure ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Independent> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Multi-propriety> ;
   rdfs:label "What's the structure?" ;
+.
+questiondata:What_s_the_type
+  rdf:type questionnaire:MultiSelection ;
+  rdf:type questionnaire:Question ;
+  rdf:type questionnaire:Type ;
+  questionnaire:questionHasAnnotationRelation <http://ikm-group.ch/archimeo/htl#HotelHasType> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#All_suites> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Bar> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Boutique_Hotel> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Business_Hotel> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Casino> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Coffe_Shop> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Conference> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Convention> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Fine_Dining> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Full_Service_Restaurant> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Hostels> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Members_Club> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Non-classified> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Quick_Service_Restaurant> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Resort> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Serviced_Apartments> ;
+  questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Spa> ;
+  rdfs:label "What's the type?" ;
 .
 questiondata:any
   rdf:type questionnaire:Answer ;
@@ -317,29 +356,4 @@ questiondata:any
 questiondata:online_distribution_and_marketing
   rdf:type questionnaire:Answer ;
   rdfs:label "online distribution & marketing" ;
-.
-questiondata:What_s_the_type
-  rdf:type questionnaire:HotelQuestion ;
-  rdf:type questionnaire:MultiSelection ;
-  questionnaire:questionHasAnnotationRelation htldata:HotelHasType ;
-  questionnaire:questionHasAnswers htl:All_suites ;
-  questionnaire:questionHasAnswers htl:Bar ;
-  questionnaire:questionHasAnswers htl:Boutique_Hotel ;
-  questionnaire:questionHasAnswers htl:Business_Hotel ;
-  questionnaire:questionHasAnswers htl:Casino ;
-  questionnaire:questionHasAnswers htl:Coffee_Shop ;
-  questionnaire:questionHasAnswers htl:Conference ;
-  questionnaire:questionHasAnswers htl:Convention ;
-  questionnaire:questionHasAnswers htl:Fine_Dining ;
-  questionnaire:questionHasAnswers htl:Full_Service_Restaurant ;
-  questionnaire:questionHasAnswers htl:Hostels ;
-  questionnaire:questionHasAnswers htl:Hotel ;
-  questionnaire:questionHasAnswers htl:Luxury ;
-  questionnaire:questionHasAnswers htl:Members_Club ;
-  questionnaire:questionHasAnswers htl:Quick_Service_Restaurant ;
-  questionnaire:questionHasAnswers htl:Resort ;
-  questionnaire:questionHasAnswers htl:Serviced_Apartments ;
-  questionnaire:questionHasAnswers htl:Spa ;
-  questionnaire:questionHasAnswers htl:any ;
-  rdfs:label "What's the type?" ;
 .

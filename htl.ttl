@@ -1,23 +1,20 @@
 # baseURI: http://ikm-group.ch/archimeo/htl
 # imports: http://ikm-group.ch/archimeo
+# imports: http://ikm-group.ch/archimeo/apqc
+# imports: http://ikm-group.ch/archimeo/bmm
 # imports: http://ikm-group.ch/archimeo/fbpdo
 # imports: http://ikm-group.ch/archimeo/nco
 # imports: http://spinrdf.org/spl
 # prefix: htl
 
-@prefix htl: <http://ikm-group.ch/archimeo//hotel#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix apqc: <http://ikm-group.ch/archimeo/apqc#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix arg: <http://spinrdf.org/arg#> .
 @prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
-@prefix bpaas: <http://ikm-group.ch/archimeo/bpaas#> .
 @prefix bpmn: <http://ikm-group.ch/archiMEO/BPMN#> .
 @prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
 @prefix fbpdo: <http://ikm-group.ch/archimeo/fbpdo#> .
+@prefix htl: <http://ikm-group.ch/archimeo/htl#> .
 @prefix media-types: <http://www.iana.org/assignments/media-types#> .
 @prefix nco: <http://ikm-group.ch/archiMEO/NCO#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -31,46 +28,13 @@
 
 <http://ikm-group.ch/archimeo/htl>
   rdf:type owl:Ontology ;
+  owl:imports <http://ikm-group.ch/archimeo> ;
+  owl:imports <http://ikm-group.ch/archimeo/apqc> ;
+  owl:imports <http://ikm-group.ch/archimeo/bmm> ;
   owl:imports <http://ikm-group.ch/archimeo/fbpdo> ;
   owl:imports <http://ikm-group.ch/archimeo/nco> ;
   owl:imports <http://spinrdf.org/spl> ;
   owl:versionInfo "Created with TopBraid Composer" ;
-.
-htl:HotelHasLocation
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasLocation" ;
-  rdfs:range htl:Location ;
-.
-htl:HotelHasProductCategory
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasProductCategory" ;
-  rdfs:range htl:Product_Categories ;
-.
-htl:HotelHasScale
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasScale" ;
-  rdfs:range htl:Scaled ;
-.
-htl:HotelHasSize
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "Hotel has a Size" ;
-  rdfs:range htl:Size ;
-.
-htl:HotelHasStructure
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasStructure" ;
-  rdfs:range htl:Structure ;
-.
-htl:HotelHasType
-  rdf:type owl:ObjectProperty ;
-  rdfs:domain htl:Hotel ;
-  rdfs:label "HotelHasType" ;
-  rdfs:range htl:Type ;
 .
 htl:Africa
   rdf:type htl:Location ;
@@ -105,10 +69,6 @@ htl:Big
   rdfs:comment "81-200 rooms/seatings" ;
   rdfs:label "Big" ;
 .
-htl:Booking_Engine
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Booking Engine" ;
-.
 htl:Boutique_Hotel
   rdf:type htl:Type ;
   rdfs:label "Boutique Hotel" ;
@@ -121,10 +81,6 @@ htl:Business_Hotel
   rdf:type htl:Type ;
   rdfs:label "Business Hotel" ;
 .
-htl:CRM_and_E-mailing
-  rdf:type htl:Product_Categories ;
-  rdfs:label "CRM and E-mailing" ;
-.
 htl:Canada
   rdf:type htl:Location ;
   rdfs:label "Canada" ;
@@ -132,10 +88,6 @@ htl:Canada
 htl:Casino
   rdf:type htl:Type ;
   rdfs:label "Casino" ;
-.
-htl:Channel_Manager
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Channel Manager" ;
 .
 htl:Coffe_Shop
   rdf:type htl:Type ;
@@ -160,14 +112,6 @@ htl:Czech_Republic
 htl:Denmark
   rdf:type htl:Location ;
   rdfs:label "Denmark" ;
-.
-htl:Direct_Booking_Booster
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Direct Booking Booster" ;
-.
-htl:E-reputation_and_Social_Media_Scanner
-  rdf:type htl:Product_Categories ;
-  rdfs:label "E-reputation and Social Media Scanner" ;
 .
 htl:Economy
   rdf:type htl:Scaled ;
@@ -206,17 +150,8 @@ htl:Greece
   rdfs:label "Greece" ;
 .
 htl:Guest_Facing
-  rdf:type owl:Class ;
-  rdfs:label "hotel guest Facing" ;
-  rdfs:subClassOf htl:Product_Categories ;
-.
-htl:Guest_Feedback_and_Survey
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Guest Feedback and Survey" ;
-.
-htl:Guest_facing
-  rdf:type htl:Product_Categories ;
-  rdfs:label "hotel guest facing" ;
+  rdf:type htl:Product_Category ;
+  rdfs:label "Guest Facing" ;
 .
 htl:Holland
   rdf:type htl:Location ;
@@ -230,6 +165,42 @@ htl:Hotel
   rdf:type owl:Class ;
   rdfs:label "Hotel" ;
   rdfs:subClassOf owl:Thing ;
+.
+htl:HotelHasLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
+  rdfs:label "HotelHasLocation" ;
+  rdfs:range htl:Location ;
+.
+htl:HotelHasProductCategory
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
+  rdfs:label "HotelHasProductCategory" ;
+  rdfs:range htl:Product_Category ;
+.
+htl:HotelHasScale
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
+  rdfs:label "HotelHasScale" ;
+  rdfs:range htl:Scaled ;
+.
+htl:HotelHasSize
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
+  rdfs:label "Hotel has a Size" ;
+  rdfs:range htl:Size ;
+.
+htl:HotelHasStructure
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
+  rdfs:label "HotelHasStructure" ;
+  rdfs:range htl:Structure ;
+.
+htl:HotelHasType
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain htl:Hotel ;
+  rdfs:label "HotelHasType" ;
+  rdfs:range htl:Type ;
 .
 htl:Independent
   rdf:type htl:Structure ;
@@ -246,10 +217,6 @@ htl:Ireland
 htl:Island
   rdf:type htl:Location ;
   rdfs:label "Island" ;
-.
-htl:Istant_Guest_Messaging
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Istant Guest Messaging" ;
 .
 htl:Italy
   rdf:type htl:Location ;
@@ -290,10 +257,6 @@ htl:Members_Club
   rdf:type htl:Type ;
   rdfs:label "Members Club" ;
 .
-htl:Meta_Search_Optimiser
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Meta Search Optimiser" ;
-.
 htl:Mexico
   rdf:type htl:Location ;
   rdfs:label "Mexico" ;
@@ -326,19 +289,9 @@ htl:Norway
   rdf:type htl:Location ;
   rdfs:label "Norway" ;
 .
-htl:Online_distribution_and_Marketing
-  rdf:type owl:Class ;
-  rdfs:label "Online distribution and Marketing" ;
-  rdfs:subClassOf htl:Product_Categories ;
-.
 htl:Operations
-  rdf:type owl:Class ;
+  rdf:type htl:Product_Category ;
   rdfs:label "Operations" ;
-  rdfs:subClassOf htl:Product_Categories ;
-.
-htl:Point_of_Sale
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Point of Sale(POS)" ;
 .
 htl:Poland
   rdf:type htl:Location ;
@@ -348,18 +301,9 @@ htl:Portugal
   rdf:type htl:Location ;
   rdfs:label "Portugal" ;
 .
-htl:Pre-stay_Upsell
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Pre-stay Upsell" ;
-.
-htl:Product_Categories
+htl:Product_Category
   rdf:type owl:Class ;
-  rdfs:label "Product Categories" ;
   rdfs:subClassOf owl:Thing ;
-.
-htl:Property_Management_System
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Property Management System" ;
 .
 htl:Quick_Service_Restaurant
   rdf:type htl:Type ;
@@ -368,10 +312,6 @@ htl:Quick_Service_Restaurant
 htl:Resort
   rdf:type htl:Type ;
   rdfs:label "Resort" ;
-.
-htl:Revenue_Management_System
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Revenue Management System" ;
 .
 htl:Russia
   rdf:type htl:Location ;
@@ -412,14 +352,6 @@ htl:Spain
   rdf:type htl:Location ;
   rdfs:label "Spain" ;
 .
-htl:Staff_Communication
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Staff Communication" ;
-.
-htl:Staff_Scheduling
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Staff Scheduling" ;
-.
 htl:Structure
   rdf:type owl:Class ;
   rdfs:label "Structure" ;
@@ -432,10 +364,6 @@ htl:Sweden
 htl:Switzerland
   rdf:type htl:Location ;
   rdfs:label "Switzerland" ;
-.
-htl:Task_Management
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Task Management" ;
 .
 htl:Turkey
   rdf:type htl:Location ;
@@ -462,19 +390,7 @@ htl:Upscale
   rdf:type htl:Scaled ;
   rdfs:label "Upscale" ;
 .
-htl:Web_App
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Web App" ;
-.
-htl:Website_Builder
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Website Builder" ;
-.
-htl:Website_Chatbot
-  rdf:type htl:Product_Categories ;
-  rdfs:label "Website Chatbot" ;
-.
-htl:meeting_room_and_Event_Space_Booking_Engine
-  rdf:type htl:Product_Categories ;
-  rdfs:label "meeting room and Event Space Booking Engine" ;
+htl:online_distribution_and_marketing
+  rdf:type htl:Product_Category ;
+  rdfs:label "Online distribution and marketing" ;
 .
