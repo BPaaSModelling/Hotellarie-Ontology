@@ -298,7 +298,7 @@ questiondata:What_s_the_scale
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Question ;
   rdf:type questionnaire:Scale ;
-  questionnaire:questionHasAnnotationRelation htl:HotelHasScale ;
+  questionnaire:questionHasAnnotationRelation <http://ikm-group.ch/archimeo/htl#HotelHasScale> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Economy> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Luxury> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Midscale> ;
@@ -306,10 +306,10 @@ questiondata:What_s_the_scale
   rdfs:label "What's the scale?" ;
 .
 questiondata:What_s_the_size
-  rdf:type questionnaire:HotelQuestion ;
   rdf:type questionnaire:MultiSelection ;
+  rdf:type questionnaire:Question ;
   rdf:type questionnaire:Size ;
-  questionnaire:questionHasAnnotationRelation htl:HotelHasSize ;
+  questionnaire:questionHasAnnotationRelation <http://ikm-group.ch/archimeo/htl#HotelHasSize> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Big> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Maxi> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Medium> ;
@@ -320,7 +320,7 @@ questiondata:What_s_the_structure
   rdf:type questionnaire:MultiSelection ;
   rdf:type questionnaire:Question ;
   rdf:type questionnaire:Structure ;
-  questionnaire:questionHasAnnotationRelation htl:HotelHasStructure ;
+  questionnaire:questionHasAnnotationRelation <http://ikm-group.ch/archimeo/htl#HotelHasStructure> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Independent> ;
   questionnaire:questionHasAnswers <http://ikm-group.ch/archimeo/htl#Multi-propriety> ;
   rdfs:label "What's the structure?" ;
