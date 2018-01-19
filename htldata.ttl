@@ -92,7 +92,7 @@ htldata:Hotel_1
   htl:HotelHasType htl:Spa ;
   rdfs:label "hotel 1" ;
 .
-htldata:Hotel_1_1
+htldata:Hotel_2
   rdf:type htl:Hotel ;
   htl:HotelHasLocation htl:Africa ;
   htl:HotelHasLocation htl:Asia ;
@@ -150,4 +150,167 @@ htldata:Hotel_1_1
   htl:HotelHasStructure htl:Multi-propriety ;
   htl:HotelHasType htl:Resort ;
   rdfs:label "hotel 2" ;
+.
+htldata:Hotel_3
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Norway ;
+  htl:HotelHasLocation htl:Poland ;
+  htl:HotelHasLocation htl:Portugal ;
+  htl:HotelHasLocation htl:Ukraine ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasProductCategory htl:Operations ;
+  htl:HotelHasProductCategory htl:online_distribution_and_marketing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasScale htl:Upscale ;
+  htl:HotelHasSize htl:Big ;
+  htl:HotelHasSize htl:Maxi ;
+  htl:HotelHasStructure htl:Independent ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:All_suites ;
+  htl:HotelHasType htl:Bar ;
+  htl:HotelHasType htl:Boutique_Hotel ;
+  htl:HotelHasType htl:Business_Hotel ;
+  htl:HotelHasType htl:Casino ;
+  htl:HotelHasType htl:Coffe_Shop ;
+  htl:HotelHasType htl:Serviced_Apartments ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 3" ;
+.
+htldata:Hotel_4
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Norway ;
+  htl:HotelHasLocation htl:Ukraine ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasScale htl:Upscale ;
+  htl:HotelHasSize htl:Big ;
+  htl:HotelHasSize htl:Maxi ;
+  htl:HotelHasStructure htl:Independent ;
+  htl:HotelHasType htl:All_suites ;
+  htl:HotelHasType htl:Bar ;
+  htl:HotelHasType htl:Boutique_Hotel ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 4" ;
+.
+htldata:Hotel_5
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Turkey ;
+  htl:HotelHasLocation htl:UK ;
+  htl:HotelHasLocation htl:USA ;
+  htl:HotelHasLocation htl:Ukraine ;
+  htl:HotelHasProductCategory htl:online_distribution_and_marketing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasSize htl:Medium ;
+  htl:HotelHasSize htl:Small ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:Non-classified ;
+  htl:HotelHasType htl:Quick_Service_Restaurant ;
+  htl:HotelHasType htl:Resort ;
+  htl:HotelHasType htl:Serviced_Apartments ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 5" ;
+.
+htldata:Hotel_6
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Estonia ;
+  htl:HotelHasLocation htl:Finland ;
+  htl:HotelHasLocation htl:France ;
+  htl:HotelHasLocation htl:Georgia ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasProductCategory htl:Operations ;
+  htl:HotelHasProductCategory htl:online_distribution_and_marketing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasScale htl:Luxury ;
+  htl:HotelHasScale htl:Midscale ;
+  htl:HotelHasScale htl:Upscale ;
+  htl:HotelHasSize htl:Big ;
+  htl:HotelHasSize htl:Maxi ;
+  htl:HotelHasSize htl:Medium ;
+  htl:HotelHasSize htl:Small ;
+  htl:HotelHasStructure htl:Independent ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:All_suites ;
+  htl:HotelHasType htl:Bar ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 6" ;
+.
+htldata:Hotel_7
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Estonia ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasProductCategory htl:Operations ;
+  htl:HotelHasProductCategory htl:online_distribution_and_marketing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasScale htl:Luxury ;
+  htl:HotelHasScale htl:Midscale ;
+  htl:HotelHasScale htl:Upscale ;
+  htl:HotelHasSize htl:Big ;
+  htl:HotelHasSize htl:Maxi ;
+  htl:HotelHasSize htl:Medium ;
+  htl:HotelHasSize htl:Small ;
+  htl:HotelHasStructure htl:Independent ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:All_suites ;
+  htl:HotelHasType htl:Bar ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 7" ;
+.
+htldata:Hotel_8
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Estonia ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasSize htl:Big ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 8" ;
+.
+htldata:Hotel_9
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Italy ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasProductCategory htl:Operations ;
+  htl:HotelHasProductCategory htl:online_distribution_and_marketing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasScale htl:Luxury ;
+  htl:HotelHasScale htl:Midscale ;
+  htl:HotelHasScale htl:Upscale ;
+  htl:HotelHasSize htl:Small ;
+  htl:HotelHasStructure htl:Independent ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:Quick_Service_Restaurant ;
+  htl:HotelHasType htl:Resort ;
+  htl:HotelHasType htl:Serviced_Apartments ;
+  htl:HotelHasType htl:Spa ;
+  rdfs:label "hotel 9" ;
+.
+htldata:Hotel_10
+  rdf:type htl:Hotel ;
+  htl:HotelHasLocation htl:Africa ;
+  htl:HotelHasLocation htl:Turkey ;
+  htl:HotelHasLocation htl:UK ;
+  htl:HotelHasLocation htl:USA ;
+  htl:HotelHasLocation htl:Ukraine ;
+  htl:HotelHasProductCategory htl:Guest_Facing ;
+  htl:HotelHasProductCategory htl:Operations ;
+  htl:HotelHasProductCategory htl:online_distribution_and_marketing ;
+  htl:HotelHasScale htl:Economy ;
+  htl:HotelHasScale htl:Luxury ;
+  htl:HotelHasScale htl:Midscale ;
+  htl:HotelHasScale htl:Upscale ;
+  htl:HotelHasSize htl:Big ;
+  htl:HotelHasSize htl:Maxi ;
+  htl:HotelHasSize htl:Medium ;
+  htl:HotelHasSize htl:Small ;
+  htl:HotelHasStructure htl:Independent ;
+  htl:HotelHasStructure htl:Multi-propriety ;
+  htl:HotelHasType htl:All_suites ;
+  htl:HotelHasType htl:Bar ;
+  htl:HotelHasType htl:Boutique_Hotel ;
+  htl:HotelHasType htl:Business_Hotel ;
+  htl:HotelHasType htl:Casino ;
+  htl:HotelHasType htl:Coffe_Shop ;
+  htl:HotelHasType htl:Conference ;
+  htl:HotelHasType htl:Convention ;
+  htl:HotelHasType htl:Fine_Dining ;
+  rdfs:label "hotel 10" ;
 .
